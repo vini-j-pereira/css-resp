@@ -75,6 +75,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 0;
 }
 
 .container-produtos{
@@ -106,4 +107,54 @@ header{
     text-align: start;
     font-size: 10px;
     width: 100px;
+}
+
+.box button{
+    width: 100px;
+    border: none;
+    background-color: #6c6cff;
+    padding: 5px;
+    color: #FAFAFA;
+   }
+
+@media screen and (max-width: 641px) {
+    #sobre{
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .img-sobre img{
+        width: 450px
+    }
+
+    #produtos{
+        width: 100%;
+        align-items: start;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .container-produtos{
+        width: 72%;
+    }
+
+   .box-produtos{
+    gap: 40px;
+    flex-wrap: wrap;
+   }
+
+   .box img{
+    width: 200px;
+    height: 250px;
+
+   }
+
+   .box button{
+    width: 100%;
+    border: none;
+    background-color: #6c6cff;
+    padding: 5px;
+    color: #FAFAFA;
+   }
 }
