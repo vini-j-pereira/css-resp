@@ -117,7 +117,7 @@ header{
     color: #FAFAFA;
    }
 
-@media screen and (max-width: 641px) {
+@media ( 641px <= width <= 1023px) {
     #sobre{
         flex-direction: column;
         align-items: center;
@@ -157,4 +157,58 @@ header{
     padding: 5px;
     color: #FAFAFA;
    }
+}
+
+@media ( 320px <= width <= 640px){
+
+    .nav-menu ul{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .nav-menu ul li a{
+        color: #FAFAFA;
+        font-size: 14px;
+    }
+
+    #sobre{
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+    .img-sobre img{
+        width: 300px;
+    }
+
+    .txt-sobre{
+        width: 90%;
+    }
+
+    #produtos{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container-produtos{
+        width: 90%;
+    }
+
+    .box-produtos{
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    .box img{
+        width: 200px;
+        height: 280px;
+    }
+
+    .box span{
+        width: 200px;
+    }
+
+    .box button{
+        width: 100%;
+    }
 }
